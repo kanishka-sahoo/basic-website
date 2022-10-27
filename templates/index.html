@@ -2,6 +2,7 @@
 
 {% block content %}
     <h1>{% block title %} Welcome to ShoutBox {% endblock %}</h1>
+    <h2>{% block subtitle %} A place to post messages anonymously and view them {% endblock %}</h2>
     {% for post in posts %}
         <a href="{{ url_for('post', post_id=post['id']) }}">            
             <h2>{{ post['title']}}</h2>
@@ -10,7 +11,6 @@
         <span class="badge badge-primary">{{ post['created'] }}</span>
         <a href="{{ url_for('edit', id=post['id']) }}">
             <span class="badge badge-warning">Edit</span>
-        </a>
         <hr>
     {% endfor %}
 {% endblock %}
