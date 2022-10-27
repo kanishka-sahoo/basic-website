@@ -1,5 +1,5 @@
 '''
-~~~~~INSERT TITLE HERE~~~~~
+Shoutbox: A place to post short messages and view them (website)
 Author: 420s
 '''
 
