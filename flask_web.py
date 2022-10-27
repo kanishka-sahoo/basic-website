@@ -15,4 +15,4 @@ def home():
 	return "Hello! this is the main page <h1>HELLO</h1>"  # some basic inline html
 
 if __name__ == "__main__":  # checks if program is run as a script or imported as module, and runs only if as script
-    app.run()
+    app.run()   # at 127.0.0.1:5000
