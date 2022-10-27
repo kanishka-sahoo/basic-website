@@ -1,5 +1,8 @@
 '''
 Shoutbox: A place to post short messages and view them (website)
+
+Description: Use Flask to host website and Database to store comments
+Optional: Work on user authentication system.
 Author: 420s
 '''
 
