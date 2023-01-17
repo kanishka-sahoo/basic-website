@@ -29,8 +29,10 @@ app.config['SECRET_KEY'] = 'your secret key'
 
 @app.before_request
 def log_request():
+    ip_addr = request.environ.get('HTTP_X_FORWARDED_FOR', request.remote_addr)
     logging.basicConfig(filename='requests.log', level=logging.DEBUG)
-    logging.debug(f'{request.method} {request.url}')
+    logging.debug(f'[{ip_addr}]: {request.method} {request.url}')
+
 # Defining the home page of our site
 @app.route("/")  # this sets the route to this page
 def index():
