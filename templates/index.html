@@ -9,8 +9,5 @@
             {{ post['content']}}
         </a>
         <span class="badge badge-primary">{{ post['created'] }}</span>
-        <a href="{{ url_for('edit', id=post['id']) }}">
-            <span class="badge badge-warning">Edit</span>
-        <hr>
     {% endfor %}
 {% endblock %}

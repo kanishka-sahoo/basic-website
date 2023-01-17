@@ -60,6 +60,7 @@ def create():
             return redirect(url_for('index'))
 
     return render_template('create.html')
+'''
 @app.route('/<int:id>/edit', methods=('GET', 'POST'))
 def edit(id):
     post = get_post(id)
@@ -80,6 +81,6 @@ def edit(id):
             return redirect(url_for('index'))
 
     return render_template('edit.html', post=post)
-
+'''
 if __name__ == "__main__":  # checks if program is run as a script or imported as module, and runs only if as script
 	app.run(host='0.0.0.0')
