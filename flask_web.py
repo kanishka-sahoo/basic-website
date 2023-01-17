@@ -6,6 +6,7 @@ Date: 2022/10/27
 import sqlite3
 from flask import Flask, flash, redirect, render_template, url_for, flash, request
 from werkzeug.exceptions import abort
+import logging
 
 # Get Database Connection
 def get_db_connection():
@@ -26,6 +27,10 @@ def get_post(post_id):
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'your secret key'
 
+@app.before_request
+def log_request():
+    logging.basicConfig(filename='requests.log', level=logging.DEBUG)
+    logging.debug(f'{request.method} {request.url}')
 # Defining the home page of our site
 @app.route("/")  # this sets the route to this page
 def index():
