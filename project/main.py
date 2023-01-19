@@ -8,6 +8,10 @@ main = Blueprint('main', __name__)
 def index():
     return render_template('index.html')
 
+@main.route("/about")
+def about_page():
+    return render_template("about.html")
+
 @main.route('/profile')
 @login_required
 def profile():
