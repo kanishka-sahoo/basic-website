@@ -1,12 +1,109 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="has-text-left">
-  <h1 class="title is-1">
-    Welcome to UnrealiGuana's Blog!!
-  </h1>
-  <h2 class="subtitle is-3">
-    A place to view all sorts of 'content'.
-  </h2>
+<div id="aboutTitleAndSubtitle">
+  <div class="has-text-left">
+    <h1 class="title is-1">
+      About UnrealiGuana
+    </h1>
+    <h2 class="subtitle is-3">
+
+    </h2>
+  </div>
+</div>
+<div id="aboutBodyContent" class="content has-text-left">
+  <h1>Introduction</h1>
+  <div class="columns">
+    <div class="column">
+      <figure class="image is-4by3">
+        <img src="https://bulma.io/images/placeholders/640x480.png">
+      </figure>
+    </div>
+    <div class="column is-size-5">
+      <p>
+        I am an 18-year-old first-year computer science student, who goes by the username UnrealiGuana. I have been
+        coding on an off since the seventh grade. My first experience with coding was some basic Java lessons in school,
+        which I have completely forgotten, because let's face it: Java sucks.
+      </p>
+      <p>
+        I'm good in Python programming and know some basic C/C++ too. My experience in C++ comes mostly from my
+        pre-university college, which provided C++ education as part of the syllabus, but they taught us in some ancient
+        16-bit version, which ran on DosBox.
+      </p>
+      <p>
+        My personal desktop rig is nothing special: It has a singular GTX 1650, an i3-9100f and a 256-GB m.2 SSD. I
+        couldn't get better soecs, partly as I had built it during the chip shortages. My laptop, on the other hand, has
+        a Ryzen 7 5800H and a mobile RTX 3050. Turns out, my laptop is more powerful than my desktop.
+      </p>
+      <p>
+        I have some experience in Linux as I run Arch on my desktop rig and use a remote Ubuntu server for personal
+        projects. I currently run Windows on my laptop, primarily for compatibility with college software, and partly
+        because I was unable to get the hotkeys to work in anything but Windows.
+      </p>
+    </div>
+  </div>
+  <h1>My Projects</h1>
+  <div class="columns">
+    <div class="column">
+      <div class="card">
+        <div class="card-header">
+          <p class="card-header-title">
+            basic-quiz-app
+          </p>
+        </div>
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <img src="../static/images/github-ss-bqa.png" alt="GitHub Project Image">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="content">
+            A quiz app meant for learning how various Python Modules work.
+            <br>
+            <a href="https://github.com/kanishka-sahoo/basic-quiz-app">GitHub Link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <div class="card-header">
+          <p class="card-header-title">
+            chatterbox
+          </p>
+        </div>
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <img src="https://bulma.io/images/placeholders/640x360.png">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="content">
+            A chatbot using gpt3 and openai module.
+            <br>
+            <a href="https://github.com/kanishka-sahoo/chatterbox">GitHub Link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h1>Education</h1>
+  <div class="is-size-5">
+    <p>
+      My preschool and nursery/playgroup education took place at KidZee and at Study Hall Playschool in Navi Mumbai. My
+      parents eventually moved back to Bangalore, where I had my kindergarten.
+    </p>
+    <p>
+      I had my first and second grades at Vibgyor High in Haralur Road, followed by third to tenth grade at Harvest
+      International School, where I spent the largest fraction of my education.
+    </p>
+    <p>
+      For my eleventh and twelfth I went to PES PU College in Bangalore, which was spent partially in online classes due
+      to the Covid-19 Pandemic. I only got to meet my froends for one year before the competitive exam season started.
+    </p>
+    <p>
+      Currently, I am pursuing my Bachelor of Technology in Computer Science at PES University.
+    </p>
+  </div>
 </div>
 {% endblock %}

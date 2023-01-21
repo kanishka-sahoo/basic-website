@@ -17,7 +17,8 @@
                     <a href="{{ url_for('main.index') }}" class="navbar-item">
                         <font size="5">UnrealiGuana</font>
                     </a>
-                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenuHeroB">
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                        data-target="navbarMenuHeroB">
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
@@ -57,7 +58,7 @@
         </div>
     </section>
     <section>
-        <div>
+        <div class="hero-body">
             <div class="container">
                 <br>
                 {% block content %}
@@ -66,5 +67,33 @@
         </div>
     </section>
 </body>
+<footer class="footer">
+    <div class="has-text-centered">
+        <p>
+            <strong>Made By UnrealiGuana</strong>
+            <br>
+            Powered by magic. 
+            <br>
+            Built with Bulma.
+        </p>
+    </div>
+    <div class="has-text-centered">
+        <!--Add Socials here-->
+        <a href="https://github.com/kanishka-sahoo/">GitHub</a>
+        &nbsp;
+        <a href="https://instagram.com/not.kanishka_/">Instagram</a>
+        &nbsp;
+        <a href="https://twitter.com/KanishkaSahoo/">Twitter</a>
+        &nbsp;
+        <span class="icon">
+
+            <i class="fab fa-github"></i>
+        </span>
+        <a href="https://discordapp.com/users/UnrealiGuana#9085/">Discord</a>
+    </div>
+    <div class="has-text-centered">
+        &copy; 2023 Kanishka Sahoo. All rights reserved.
+    </div>
+    </footer>
 
 </html>
