@@ -7,16 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>UnrealiGuana</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 </head>
 
 <body>
-    <section class="hero is-primary is-small">
+    <section class="hero is-primary is-meduim">
         <div class="hero-head">
             <nav class="navbar" role="navigation" aria-label="main navigation">
                 <div class="navbar-brand">
                     <a href="{{ url_for('main.index') }}" class="navbar-item">
                         <font size="5">UnrealiGuana</font>
                     </a>
+                    <!--Needed for navbar hamburger design, only mobile devices-->
                     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
                         data-target="navbarMenuHeroB">
                         <span aria-hidden="true"></span>
@@ -24,6 +26,7 @@
                         <span aria-hidden="true"></span>
                     </a>
                 </div>
+                <!--Navbar URLs-->
                 <div id="navbarMenuHeroB" class="navbar-menu">
                     <div class="navbar-end">
                         <a href="{{ url_for('main.about_page') }}" class="navbar-item">
@@ -31,6 +34,7 @@
                         </a>
                     </div>
                 </div>
+                <!--Added JS to make website more responsive on mobile devices bt hiding navbar into hamburger menu-->
                 <script>
                     document.addEventListener('DOMContentLoaded', () => {
 
@@ -61,6 +65,7 @@
         <div class="hero-body">
             <div class="container">
                 <br>
+                <!--Primary content goes here-->
                 {% block content %}
                 {% endblock %}
             </div>
@@ -70,11 +75,12 @@
 <footer class="footer">
     <div class="has-text-centered">
         <p>
-            <strong>Made By UnrealiGuana</strong>
+            <strong>
+                Made By UnrealiGuana
+            </strong>
             <br>
             Powered by magic. 
             <br>
-            Built with Bulma.
         </p>
     </div>
     <div class="has-text-centered">
@@ -85,10 +91,6 @@
         &nbsp;
         <a href="https://twitter.com/KanishkaSahoo/">Twitter</a>
         &nbsp;
-        <span class="icon">
-
-            <i class="fab fa-github"></i>
-        </span>
         <a href="https://discordapp.com/users/UnrealiGuana#9085/">Discord</a>
     </div>
     <div class="has-text-centered">
